@@ -11,10 +11,13 @@ data:
       - roboshop-trainee
       userarn: arn:aws:iam::051826708837:user/raju
       username: raju
+    - groups:
+      - roboshop-admin
+      userarn: arn:aws:iam::051826708837:user/ramesh
+      username: ramesh
 kind: ConfigMap
 metadata:
   creationTimestamp: "2026-09-25T05:30:17Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "1272"
   uid: be9e4c51-9674-45f7-affb-deae7d162862
