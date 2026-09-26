@@ -12,3 +12,5 @@ eksctl create iamserviceaccount \
   --attach-policy-arn=arn:aws:iam::051826708837:policy/RoboShopMySQLSecretreader \
   --approve
 ````
+
+aws secretsmanager get-secret-value --secret-id roboshop/dev/mysql_password --query SecretString --output text
